@@ -7,7 +7,7 @@ public class Lesson1 {
     }
 
     static void printThreeWords(){
-        System.out.println("Orange");
+        System.out.println("Sreer");
         System.out.println("Banana");
         System.out.println("Apple");
     }
