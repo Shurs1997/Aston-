@@ -11,5 +11,4 @@ public class Lesson1 {
         System.out.println("Banana");
         System.out.println("Apple");
     }
-
 }
