@@ -6,7 +6,7 @@ public class Lesson3 {
         }
 
         public static void printColor() {
-            int value = 101;
+            int value = 150;
 
             if (value <= 0) {
                 System.out.println("Красный");
