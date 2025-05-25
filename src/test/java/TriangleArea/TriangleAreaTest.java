@@ -1,18 +1,19 @@
 package TriangleArea;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
-class TriangleAreaTest {
+public class TriangleAreaTest {
+
+    TriangleArea area = new TriangleArea();
+
     @Test
-    void testArea() {
-        TriangleArea area = new TriangleArea();
-        assertEquals(10.0, area.calculate(5, 4));
+    public void testArea() {
+        assertEquals(area.calculate(5, 4), 10.0);
     }
 
-    @Test
-    void testNegative() {
-        TriangleArea area = new TriangleArea();
-        assertThrows(IllegalArgumentException.class, () -> area.calculate(-5, 4));
+    @Test(expectedExceptions = IllegalArgumentException.class)
+    public void testNegative() {
+        area.calculate(-5, 4);
     }
 }
